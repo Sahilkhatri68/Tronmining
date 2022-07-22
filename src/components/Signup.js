@@ -8,41 +8,41 @@ import {
 } from "react-router-dom";
 export default function Signup() {
 
-    const [email, setEmail] = useState([])
-    const [password, setPassword] = useState([])
+    // const [email, setEmail] = useState([])
+    // const [password, setPassword] = useState([])
 
     // console.log(email)
     // console.log(password)
 
 
     // posting data
-    const postData = () => {
+    // const postData = () => {
 
-        fetch("http://localhost:4200/signup", {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', },
-            body: JSON.stringify({ email, password }),
-        })
+    //     fetch("http://localhost:4200/signup", {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', },
+    //         body: JSON.stringify({ email, password }),
+    //     })
 
-    }
+    // }
 
     //getting data 
     // const [info, Setinfo] = useState([])
-    const fetchData = () => {
-        // fetch("http://localhost:4200/signup")
-        //     .then((response) => response.json())
-        //     .then((json) => console.log(json));
-    };
+    // const fetchData = () => {
+    //     // fetch("http://localhost:4200/signup")
+    //     //     .then((response) => response.json())
+    //     //     .then((json) => console.log(json));
+    // };
 
     // useEffect(() => {
     //     fetchData()
     // }, [])
 
     // form loading stop
-    const preventDefault = (e) => {
-        e.preventDefault();
-        console.log("form submitted");
-    };
+    // const preventDefault = (e) => {
+    //     e.preventDefault();
+    //     console.log("form submitted");
+    // };
 
     return (
         <div className='body'>
@@ -101,11 +101,11 @@ export default function Signup() {
                                 <input type="hidden" name="_token" />
                                 <div className="field">
                                     <label>E-mail</label>
-                                    <input placeholder="Your email" id="login-email" type="email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    <input placeholder="Your email" id="login-email" type="email" name="email" required />
                                 </div>
                                 <div className="field">
                                     <label>Password</label>
-                                    <input placeholder="Your password" id="login-password" type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                                    <input placeholder="Your password" id="login-password" type="password" name="password" />
                                 </div>
                                 <div className='info'>
                                     <p>
@@ -113,7 +113,7 @@ export default function Signup() {
                                     </p>
                                 </div>
                                 <div className="btn">
-                                    <button type="submit" onClick={postData}><span>Create <br />New account</span></button>
+                                    <button type="submit"  ><span>Create <br />New account</span></button>
                                 </div>
                             </form>
                             <div className='title'>
