@@ -97,7 +97,7 @@ export default function Signup() {
                         </header>
                         {/* main content of login page  */}
                         <div className='loginpage'>
-                            <form method='post' onSubmit={preventDefault}>
+                            <form method='post' >
                                 <input type="hidden" name="_token" />
                                 <div className="field">
                                     <label>E-mail</label>
