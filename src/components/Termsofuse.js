@@ -32,9 +32,7 @@ export default function Termsandcondition() {
                         </div>
                     </aside>
                     <section className='maincontent'>
-                        <header style={{
-                          
-                        }}>
+                        <header  >
                             <Link to="/">  <a className='logo'>
 
                                 <p>Tron  </p>
@@ -70,8 +68,8 @@ export default function Termsandcondition() {
                             <p>Information that you provide to us during registration.</p>
                             <p>When you create an account, at SunMining, you provide us personal information that includes your contact information (email address and password).</p>
                             <p>Each time you visit our site and use our services, we can automatically collect the following information, which may be considered personal information in combination with other information about you:</p>
-                     
-                             
+
+
                         </div>
                     </section>
                 </section>
@@ -79,8 +77,8 @@ export default function Termsandcondition() {
             <footer>
                 <div className="info"><p>Copyright © 2022 TronMining</p></div>
                 <div className="link">
-                   <Link to="/policy"> Privacy Policy</Link>
-                  <Link to="/terms">Terms & Conditioin</Link>
+                    <Link to="/policy"> Privacy Policy</Link>
+                    <Link to="/terms">Terms & Conditioin</Link>
                 </div>
             </footer>
         </div >
